@@ -1,0 +1,15 @@
+!/bin/bash
+apt-get upgrade -y
+apt upgrade -y
+apt-get update
+apt update
+apt-get dist-upgrade -y
+apt dist-upgrade -y
+apt-get clean
+apt clean
+apt-get autoremove -y
+apt autoremove -y
+apt-get purge $(dpkg -1 | awk '/^rc/ { pring $2 }')
+apt purge $(dpkg -1 | awk '/^rc/ { pring $2 }')
+apt -y dist-upgrade --auto-remove --purge
+apt-get -y dist-upgrade --auto-remove --purge
